@@ -1,0 +1,89 @@
+:root {
+  --c: #b48c5a;
+  font-family: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #111;
+  color: #fff;
+}
+.hero {
+  height: 100vh;
+  background: url(https://images.unsplash.com/photo-1599351431623-110e9d719e87?auto=format&fit=crop&w=1200&q=60)
+    center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.hero h1 {
+  font-size: clamp(36px, 8vw, 72px);
+}
+.hero p {
+  font-size: 20px;
+  margin: 15px 0 30px;
+}
+.btn {
+  background: var(--c);
+  color: #fff;
+  padding: 16px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.card {
+  position: sticky;
+  top: 100px;
+  background: #1e1e1e;
+  border-radius: 15px;
+  padding: 50px;
+  margin: 0 20px 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.card h2 {
+  font-size: 28px;
+  color: var(--c);
+  margin-bottom: 15px;
+}
+.section {
+  padding: 40px 20px;
+}
+.review {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+form {
+  background: #1e1e1e;
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 500px;
+  margin: auto;
+}
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+}
+footer {
+  background: #000;
+  padding: 50px 0;
+  text-align: center;
+  color: #888;
+}
+footer a {
+  color: var(--c);
+}
