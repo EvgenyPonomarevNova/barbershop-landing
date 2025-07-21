@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>BarberShop – Card-Stack</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header class="hero">
+  <h1>BarberShop</h1>
+  <p>Команда барберов, которая знает своё дело</p>
+  <button class="btn" onclick="scrollToSection('cards')">Смотреть дальше</button>
+</header>
+
+<section id="cards">
+  <div class="card">
+    <h2>О нас</h2>
+    <p>BarberShop — это команда профессионалов с общим опытом более 15 лет. Мы работаем в стиле барбер-шопа нового поколения: качественные стрижки, оформление бород, атмосфера и кофе для каждого гостя.</p>
+  </div>
+  <div class="card">
+    <h2>Услуги</h2>
+    <ul style="list-style:none;padding:0">
+      <li>Мужская стрижка – 1 000 ₽</li>
+      <li>Борода – 600 ₽</li>
+      <li>Детская стрижка – 700 ₽</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>Отзывы</h2>
+    <div class="review">«Лучшая стрижка за 5 лет!» – Алексей</div>
+    <div class="review">«Атмосфера и качество» – Мария</div>
+  </div>
+  <div class="card">
+    <h2>Онлайн-запись</h2>
+    <form action="https://formspree.io/f/YOUR_ID" method="POST">
+      <input type="text" name="name" placeholder="Имя" required>
+      <input type="tel" name="phone" placeholder="Телефон" required>
+      <input type="date" name="date">
+      <select name="service">
+        <option>Мужская стрижка</option>
+        <option>Борода</option>
+        <option>Детская стрижка</option>
+      </select>
+      <textarea name="comment" placeholder="Комментарий" rows="3"></textarea>
+      <button class="btn" type="submit">Записаться</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© BarberShop 2024<br>
+    <a href="tel:+79991234567">+7 999 123-45-67</a> |
+    <a href="mailto:hello@barbershop.ru">hello@barbershop.ru</a> |
+    <a href="https://instagram.com/barbershop">Instagram</a>
+  </p>
+</footer>
+</body>
+</html>
